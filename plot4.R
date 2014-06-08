@@ -1,10 +1,10 @@
 #read the data
 plot4 <- read.table(
     "../household_power_consumption.txt"
-    , sep=";"
-    , header=TRUE
-    , stringsAsFactors =FALSE
-)
+  , sep=";"
+  , header=TRUE
+  , stringsAsFactors =FALSE
+  )
 
 #convert dates and subset 2007-02-01 and 2007-02-02
 plot4$DateTime <- strptime(paste(plot4$Date, plot4$Time), "%d/%m/%Y %H:%M:%S")
